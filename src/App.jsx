@@ -12,11 +12,9 @@ function App() {
 export default App
 
 function Child(props){
-  const nameVar=props.name
-  const ageVar=props.age
   return(
     <>
-    <GrandChild name={nameVar} age={ageVar}/>
+    <GrandChild name={props.name} age={props.age}/>
     </>
   )
 }
